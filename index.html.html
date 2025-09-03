@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Estudantes - VIII Feira de Profissões IEMA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin-top: 30px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .btn-submit {
+            width: 100%;
+        }
+        .criteria-table {
+            width: 100%;
+            margin-top: 30px;
+        }
+        .criteria-table th, .criteria-table td {
+            padding: 10px;
+            text-align: center;
+        }
+        .criteria-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>VIII Feira de Profissões IEMA</h1>
+        <p>Avaliação de Projetos</p>
+    </div>
+
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="nome">Nome do Estudante:</label>
+            <input type="text" class="form-control" id="nome" name="nome" required>
+        </div>
+
+        <div class="form-group">
+            <label for="tema">Tema do Projeto:</label>
+            <input type="text" class="form-control" id="tema" name="tema" required>
+        </div>
+
+        <div class="form-group">
+            <label for="turma">Selecione a Turma:</label>
+            <select class="form-control" id="turma" name="turma" required>
+                <option value="Turma 101">Turma 101</option>
+                <option value="Turma 102">Turma 102</option>
+                <option value="Turma 103">Turma 103</option>
+                <option value="Turma 104">Turma 104</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="avaliador">Nome do Avaliador:</label>
+            <input type="text" class="form-control" id="avaliador" name="avaliador" required>
+        </div>
+
+        <table class="table table-bordered criteria-table">
+            <thead>
+                <tr>
+                    <th>Critério</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Clareza e Coerência da Apresentação</td>
+                    <td><input type="radio" name="clareza" value="1"></td>
+                    <td><input type="radio" name="clareza" value="2"></td>
+                    <td><input type="radio" name="clareza" value="3"></td>
+                    <td><input type="radio" name="clareza" value="4"></td>
+                    <td><input type="radio" name="clareza" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Conteúdo Técnico e Relevância</td>
+                    <td><input type="radio" name="conteudo" value="1"></td>
+                    <td><input type="radio" name="conteudo" value="2"></td>
+                    <td><input type="radio" name="conteudo" value="3"></td>
+                    <td><input type="radio" name="conteudo" value="4"></td>
+                    <td><input type="radio" name="conteudo" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Criatividade e Inovação</td>
+                    <td><input type="radio" name="criatividade" value="1"></td>
+                    <td><input type="radio" name="criatividade" value="2"></td>
+                    <td><input type="radio" name="criatividade" value="3"></td>
+                    <td><input type="radio" name="criatividade" value="4"></td>
+                    <td><input type="radio" name="criatividade" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Habilidade de Comunicação</td>
+                    <td><input type="radio" name="comunicacao" value="1"></td>
+                    <td><input type="radio" name="comunicacao" value="2"></td>
+                    <td><input type="radio" name="comunicacao" value="3"></td>
+                    <td><input type="radio" name="comunicacao" value="4"></td>
+                    <td><input type="radio" name="comunicacao" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Interatividade e Engajamento</td>
+                    <td><input type="radio" name="engajamento" value="1"></td>
+                    <td><input type="radio" name="engajamento" value="2"></td>
+                    <td><input type="radio" name="engajamento" value="3"></td>
+                    <td><input type="radio" name="engajamento" value="4"></td>
+                    <td><input type="radio" name="engajamento" value="5"></td>
+                </tr>
+                <tr>
+                    <td>Organização do Estande</td>
+                    <td><input type="radio" name="organizacao" value="1"></td>
+                    <td><input type="radio" name="organizacao" value="2"></td>
+                    <td><input type="radio" name="organizacao" value="3"></td>
+                    <td><input type="radio" name="organizacao" value="4"></td>
+                    <td><input type="radio" name="organizacao" value="5"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="submit" class="btn btn-primary btn-submit">Enviar Avaliação</button>
+    </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
